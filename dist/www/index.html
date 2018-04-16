@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <script src="keybinding.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>tcycle</title>
+</head>
+
+<body>
+
+    <div class="appwindow">
+
+        <div class='header'>
+            <span class="head" id='head'>tcycle</span>
+            <span class='new button' title='New Task' onclick="newtask()"><b>+</b></span>
+            <span class="button shortcuts" title="Keybord shortcuts" onclick="shortcuts()"><b>ks</b></span>
+        </div>
+
+        <hr/>
+        <br/>
+
+        <div id='shortcutdiv'></div>
+
+        <div id="ipform">
+            <center>
+                <br/>
+                <span id='rangeValLabel'>Priority</span><br/><br/>
+                <input type="range" min="1" max="5" value="3" class="slider" id="priority"
+                    oninput="document.getElementById('rangeValLabel').innerHTML = `Priority : ${this.value}`;"/>
+                <br/>
+                <br/>
+                <span>Task description</span>
+                <br/>
+                <br/>
+                <textarea id="content" cols="40"></textarea>
+                <br/>
+                <br/>
+                <button class="submit" onclick="add()">Submit</button>
+                <br/>
+                <br/>
+            </center>
+        </div>
+        <br/>
+        <center><span id='notification'></span></center>
+        <br/>
+        <br/>
+        <div id='container'>
+        </div>
+    </div>
+
+</body>
+
+</html>

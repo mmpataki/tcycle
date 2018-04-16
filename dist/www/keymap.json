@@ -1,0 +1,6 @@
+{
+    "newtask" : "CTRL + =",
+    "deletetask" : "Delete",
+    "taskdone" : "CTRL + SHIFT + Enter",
+    "postpone" : "CTRL + Enter"
+}
